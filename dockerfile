@@ -9,7 +9,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Instala as dependências Python
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copia o restante dos arquivos da aplicação para o diretório de trabalho
 # O '.' no destino significa o WORKDIR (/app)
